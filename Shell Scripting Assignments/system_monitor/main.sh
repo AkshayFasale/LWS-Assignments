@@ -18,6 +18,9 @@ echo "..................................."
 source memory_usage.sh
 
 
+while true
+do
+
 echo "
     Select your choice
     1. CPU Statistics - Type cpu|1
@@ -43,7 +46,7 @@ case $choice in
         echo "Please enter valid input"
         exit 1
 esac
-
+done
 : "
 if [[$choice == "cpu"]]
 then

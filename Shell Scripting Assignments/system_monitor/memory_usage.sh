@@ -7,5 +7,8 @@
 
 function mem_stats()
 {
- ps -eocomm,pmem | grep -E -v '(0.0)|(%MEM)'   
+    echo "*********************************"
+    echo "********* Memory Stats **********"
+    echo "*********************************"
+ps -eocomm,pmem | grep -E -v '(0.0)|(%MEM)'   
 }
