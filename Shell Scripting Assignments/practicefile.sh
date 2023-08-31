@@ -25,3 +25,15 @@ elif [[ $name == "Aditi" ]]; then
 else
     echo "Not valid option..! BYE"
 fi
+
+
+# Declaring predefined variables and user defined variables
+echo Our shell name is : $BASH
+echo Our shell version name is : $BASH_VERSION
+echo Our home directory is : $HOME
+echo Our current directory is : $PWD
+
+
+read -p "My surname is : " surname
+echo My Full name is $name $surname
+
