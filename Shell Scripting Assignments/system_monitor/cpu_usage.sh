@@ -11,7 +11,7 @@ function cpu_stats()
     echo "*********************************"
     echo "********* CPU Stats **********"
     echo "*********************************"
-    ps -eocomm,pcpu | grep -E -v '(0.0)|(%CPU)'
+    ps -eocomm,pcpu | grep -E -v '(0.0)|(%CPU)' >> "$1".txt
 }
 
 

@@ -10,5 +10,5 @@ function mem_stats()
     echo "*********************************"
     echo "********* Memory Stats **********"
     echo "*********************************"
-ps -eocomm,pmem | grep -E -v '(0.0)|(%MEM)'   
+ps -eocomm,pmem | grep -E -v '(0.0)|(%MEM)'   >> "$1".txt
 }
