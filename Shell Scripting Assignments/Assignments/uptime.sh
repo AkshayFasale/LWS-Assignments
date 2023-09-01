@@ -10,5 +10,5 @@ if [ "$uptime_seconds" -gt "$max_uptime" ]; then
     echo "System has been up for more than 2 weeks. Restarting..."
     sudo reboot
 else
-    echo "System uptime is within range."
+    echo "System uptime is within range..!"
 fi
