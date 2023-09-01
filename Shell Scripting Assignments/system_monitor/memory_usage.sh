@@ -12,3 +12,4 @@ function mem_stats()
     echo "*********************************"
 ps -eocomm,pmem | grep -E -v '(0.0)|(%MEM)'   >> "$1".txt
 }
+
